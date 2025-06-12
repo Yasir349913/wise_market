@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "./CategoryNavbar.module.css";
+import styles from "./Categorynavbar.module.css";
 
 const CategoryNavbar = () => {
   const [activeCategory, setActiveCategory] = useState(null);
