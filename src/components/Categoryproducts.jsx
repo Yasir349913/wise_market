@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
-import styles from "./CategoryProducts.module.css";
+import styles from "./Categoryproducts.module.css";
 import { Cartcontext } from "../store/Cartcontext";
 
 const CategoryProducts = () => {
