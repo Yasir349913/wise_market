@@ -1,0 +1,235 @@
+/* Banner Section */
+.bannerWrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.bannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  max-width: 700px;
+}
+
+/* Make a Difference Section */
+.makediff {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.makediff h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.makediff p {
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Difference Cards Section */
+.diffnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: white;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 25px;
+  width: 260px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+/* Choose Us Section */
+.chooseus {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.chooseus h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.chooseus p {
+  font-size: 1.05rem;
+  max-width: 850px;
+  margin: 0 auto 40px;
+  color: #444;
+}
+
+.chooseusBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.boxIcon {
+  font-size: 2.5rem;
+  color: #28a745;
+}
+
+.box h4 {
+  font-size: 1.2rem;
+}
+
+.box p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Business Model Section */
+.businessModel {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.businessModelContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.businessText {
+  flex: 1;
+  text-align: left;
+}
+
+.businessText h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.businessText p {
+  font-size: 1.05rem;
+  max-width: 800px;
+  color: #555;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 10px 25px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+.businessImage {
+  flex: 1;
+  text-align: right;
+}
+
+.businessImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+}
+
+.serviceBox {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.serviceBox img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.serviceBox h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.serviceBox p {
+  font-size: 0.95rem;
+  color: #666;
+}

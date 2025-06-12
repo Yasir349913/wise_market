@@ -1,0 +1,111 @@
+.cartContainer {
+  padding: 2rem;
+  background-color: #f9fafb;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.cartItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f1f1f1;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h3 {
+  margin: 0 0 0.5rem;
+  color: #222;
+}
+
+.info p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.buttons button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #e5e7eb;
+  color: #111827;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #d1d5db;
+}
+
+.removeButton {
+  background-color: #f87171;
+  color: white;
+}
+
+.removeButton:hover {
+  background-color: #ef4444;
+}
+@media (max-width: 768px) {
+  .cartItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.totalSection {
+  margin-top: 30px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2e7d32;
+  padding-right: 20px;
+  border-top: 2px solid #ccc;
+  padding-top: 15px;
+}

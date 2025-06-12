@@ -1,0 +1,170 @@
+.banner {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.7;
+  background-color: #fff;
+}
+
+.para1 {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.heading1,
+.heading2,
+.heading3,
+.heading4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 40px 0 10px;
+  color: #0b5ed7;
+  border-left: 4px solid #0b5ed7;
+  padding-left: 10px;
+}
+
+.para2,
+.para3 {
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+}
+
+.lists,
+.list2 {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.lists li,
+.list2 li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 15px;
+}
+
+.lists li::before,
+.list2 li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0b5ed7;
+  font-size: 1.2rem;
+}
+
+.bestwishes {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+  color: #555;
+}
+
+/* -----------------------------
+   📱 Responsive Styling Starts
+------------------------------ */
+
+@media (max-width: 992px) {
+  .content {
+    padding: 30px 16px;
+  }
+
+  .heading1,
+  .heading2,
+  .heading3,
+  .heading4 {
+    font-size: 1.3rem;
+  }
+
+  .para1,
+  .para2,
+  .para3,
+  .lists li,
+  .list2 li,
+  .bestwishes {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    max-height: 220px;
+  }
+
+  .heading1,
+  .heading2,
+  .heading3,
+  .heading4 {
+    font-size: 1.2rem;
+    padding-left: 8px;
+    border-left: 3px solid #0b5ed7;
+  }
+
+  .para1,
+  .para2,
+  .para3,
+  .lists li,
+  .list2 li,
+  .bestwishes {
+    font-size: 0.95rem;
+  }
+
+  .lists,
+  .list2 {
+    padding-left: 16px;
+  }
+
+  .lists li,
+  .list2 li {
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    max-height: 180px;
+  }
+
+  .content {
+    padding: 25px 12px;
+  }
+
+  .heading1,
+  .heading2,
+  .heading3,
+  .heading4 {
+    font-size: 1.1rem;
+  }
+
+  .para1,
+  .para2,
+  .para3,
+  .lists li,
+  .list2 li,
+  .bestwishes {
+    font-size: 0.9rem;
+  }
+
+  .bestwishes {
+    padding: 15px;
+  }
+}

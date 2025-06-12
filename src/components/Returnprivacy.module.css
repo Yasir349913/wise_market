@@ -1,0 +1,180 @@
+.policies {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.returnbanner,
+.privacybanner {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.returnbanner img,
+.privacybanner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-top: 40px;
+  color: #0b5ed7;
+  border-left: 4px solid #0b5ed7;
+  padding-left: 12px;
+}
+
+.returnpolicy,
+.causes,
+.conditions,
+.purpose,
+.scope,
+.protection,
+.elements {
+  margin-top: 30px;
+}
+
+.para1,
+.para2,
+.para3,
+.para4 {
+  margin-top: 15px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.lists1,
+.list2,
+.list3,
+.list4,
+.list5 {
+  padding-left: 25px;
+  margin-top: 15px;
+}
+
+.lists1 li,
+.list2 li,
+.list3 li,
+.list4 li,
+.list5 li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 18px;
+}
+
+.lists1 li::before,
+.list2 li::before,
+.list3 li::before,
+.list4 li::before,
+.list5 li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0b5ed7;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.data,
+.restrictions {
+  margin-top: 30px;
+}
+
+/* -------------------------
+   📱 Responsive Design
+---------------------------- */
+
+@media (max-width: 992px) {
+  .policies {
+    padding: 30px 16px;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .para1,
+  .para2,
+  .para3,
+  .para4,
+  .lists1 li,
+  .list2 li,
+  .list3 li,
+  .list4 li,
+  .list5 li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .returnbanner,
+  .privacybanner {
+    max-height: 220px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .para1,
+  .para2,
+  .para3,
+  .para4 {
+    font-size: 0.95rem;
+  }
+
+  .lists1,
+  .list2,
+  .list3,
+  .list4,
+  .list5 {
+    padding-left: 18px;
+  }
+
+  .lists1 li,
+  .list2 li,
+  .list3 li,
+  .list4 li,
+  .list5 li {
+    font-size: 0.95rem;
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .returnbanner,
+  .privacybanner {
+    max-height: 180px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    padding-left: 8px;
+    border-left: 3px solid #0b5ed7;
+  }
+
+  .para1,
+  .para2,
+  .para3,
+  .para4 {
+    font-size: 0.9rem;
+  }
+
+  .lists1 li,
+  .list2 li,
+  .list3 li,
+  .list4 li,
+  .list5 li {
+    font-size: 0.9rem;
+  }
+}
