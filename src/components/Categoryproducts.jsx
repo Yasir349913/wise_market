@@ -1,16 +1,14 @@
 import React, { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import styles from "./Categoryproducts.module.css";
 import { Cartcontext } from "../store/Cartcontext";
 
 const CategoryProducts = () => {
   const { category } = useParams();
-  const { addtoCart } = useContext(Cartcontext);
+  const { addtoCart, cartItems } = useContext(Cartcontext); // ✅ add cartItems
 
-  // Folder name based on category (e.g., Samsung => samsung)
   const folderName = category.toLowerCase().replace(/\s+/g, "");
 
-  // Generate 20 dummy product images with prices
   const images = Array.from({ length: 20 }, (_, i) => {
     const path = `/assets/images/products/${folderName}/${i + 1}.jpg`;
     return path;
@@ -35,6 +33,11 @@ const CategoryProducts = () => {
             deal: "Limited Offer",
           };
 
+          // ✅ Check if item already exists in cartItems
+          const isInCart = cartItems.some(
+            (item) => item.title === product.title
+          );
+
           return (
             <div key={idx} className={styles.card}>
               <img
@@ -44,7 +47,14 @@ const CategoryProducts = () => {
               />
               <h4>{product.title}</h4>
               <p>Price: {product.price}</p>
-              <button onClick={() => addtoCart(product)}>Add to Cart</button>
+
+              {!isInCart ? (
+                <button onClick={() => addtoCart(product)}>Add to Cart</button>
+              ) : (
+                <Link to="/cart" className={styles.btn}>
+                  View Cart
+                </Link>
+              )}
             </div>
           );
         })}
